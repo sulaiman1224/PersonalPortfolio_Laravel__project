@@ -1,0 +1,929 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevent padding/margin from affecting width/height */
+}
+
+/* body {
+    background: linear-gradient(135deg, #f9f9f9 0%, #e0e7ff 100%);
+    animation: fadeIn 0.5s ease-in;
+} */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.recentCustomers {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 0; /* Remove margins to eliminate extra space */
+    min-height: calc(100vh - 50px); /* Adjust height to avoid space at bottom */
+    position: relative; /* Positioning for inner elements */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.cardHeader {
+    border-bottom: 2px solid #4e73df;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-custom{
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+.home-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Column for mobile layout */
+    transition: box-shadow 0.3s, transform 0.3s;
+    background-color: #fff;
+    opacity: 0; /* Initially hidden for fade-in */
+    transform: translateY(20px); /* Initial position */
+    animation: fadeInUp 0.5s forwards; /* Animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.home-details {
+    flex-grow: 1;
+}
+
+.home-details p {
+    margin: 5px 0;
+}
+
+.home-details i {
+    color: #4e73df;
+}
+
+.home-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Added space above actions */
+}
+
+.home-img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.badge-profession {
+    padding: 0.4em 0.75em;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.badge-profession-1 {
+    background-color: #1cc88a;
+}
+
+.badge-profession-2 {
+    background-color: #f6c23e;
+}
+
+.badge-profession-3 {
+    background-color: #e74a3b;
+}
+
+.cv-link {
+    color: #4e73df;
+}
+
+.description-more {
+    cursor: pointer;
+    color: #4e73df;
+}
+
+
+/*======================================= about============================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+.text-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.read-more {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.education-item {
+    background-color: #f8f9fc;
+    border: 1px solid #e3e6f0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+}
+
+.education-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-description {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.toggle-button {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e7f1ff;
+    border: none;
+    border-radius: 5px;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #d0e6ff;
+}
+
+.progress {
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+/* Tooltip styles */
+.tooltip-inner {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tooltip-arrow {
+    border-top-color: #007bff;
+}
+
+
+
+
+
+
+.dark-mode .text-link {
+    color: #007bff;
+}
+
+/* Styles for Skills Section */
+/* Additional styles for the Skills Card */
+.skill-card-body {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+}
+
+.skills-details {
+    margin-top: 15px;
+}
+
+.list-group-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #e3f2fd;
+    transform: translateY(-2px);
+}
+
+.list-group-item strong {
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    .skill-card {
+        margin-bottom: 1rem;
+    }
+
+    .toggle-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .list-group-item {
+        padding: 10px;
+    }
+}
+
+/*============================================== service data =======================================*/
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Set body height to 100% */
+    margin: 0; /* Remove default margin */
+}
+.recentCustomers {
+    margin: 20px;
+    height: calc(100vh - 40px); /* Adjust to fill the height minus margins */
+    overflow-y: auto; /* Enable scroll if content exceeds height */
+}
+.service-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.service-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service-description {
+    font-size: 0.95rem;
+    color: #495057;
+    margin-top: 10px;
+    line-height: 1.6;
+    max-height: 120px; /* About six lines */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.5s ease-in-out;
+}
+.service-card:hover .service-description {
+    max-height: 300px; /* Show full description on hover */
+}
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343a40;
+    font-weight: bold;
+}
+.badge {
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.btn-outline-primary {
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+.btn-outline-danger {
+    border-color: #dc3545;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .service-card {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    .edit-btn, .delete-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+/* ===========================================portfolio=========================================== */
+
+.recentCustomers {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.service-card {
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.service-image:hover {
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-header:hover {
+    background-color: #0056b3;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 15px 0;
+    line-height: 1.6;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.service-card:hover .service-description {
+    max-height: 300px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+}
+/* ============================================Accounts========================================== */
+
+
+.recentCustomers {
+    margin: 20px;
+}
+.service-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.service-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover .service-description {
+    max-height: 300px; /* Show full description on hover */
+}
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #6c757d;
+}
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343a40;
+    font-weight: bold;
+}
+.badge {
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.btn-outline-primary {
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+.btn-outline-danger {
+    border-color: #dc3545;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 992px) {
+    .service-card {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    .edit-btn, .delete-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* =================================================feedback ======================================== */
+
+
+
+/* Add service button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Feedback card styles */
+.feedback-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card header styling */
+
+
+/* Badge status styling */
+.badge-status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Card body styles */
+.card-body {
+    font-size: 16px;
+    color: #555;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+/* Email link styling */
+.email-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Action buttons */
+.action-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 5px 0;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.btn-update {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-update:hover,
+.btn-delete:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.btn-update i,
+.btn-delete i {
+    margin-right: 5px;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .recentCustomers h2 {
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .feedback-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback-card {
+        padding: 12px;
+    }
+
+    .btn-primary {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+}
+
+@media (max-width: 652px) {
+    .recentCustomers h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+}
+
+/* =============================================profile==================================== */
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.recentCustomers {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.cardHeader {
+    border-bottom: 2px solid #4e73df;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.customer-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fff;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.customer-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.customer-details p {
+    margin: 5px 0;
+}
+
+.customer-img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-actions a {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.customer-actions a:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-warning {
+    background-color: #f6c23e;
+    border-color: #f6c23e;
+    color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .customer-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer-img {
+        margin-bottom: 15px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .customer-details {
+        text-align: center;
+    }
+
+    .customer-actions {
+        flex-direction: column;
+    }
+
+    .cardHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,114 @@
+
+.recentCustomers {
+    background-color: #ffffff;
+    /* White card background */
+    border-radius: 1rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 3rem;
+    margin-top: 2rem;
+    transition: transform 0.3s;
+    /* Animation effect */
+}
+
+.recentCustomers:hover {
+    transform: translateY(-3px);
+    /* Lift effect on hover */
+}
+
+.cardHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cardHeader h2 {
+    font-size: 2.5rem;
+    /* Larger title */
+    color: #343a40;
+    /* Dark gray for better contrast */
+}
+
+
+
+
+
+.form-label {
+    font-weight: bold;
+    color: #6c757d;
+    /* Medium gray for labels */
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    /* Standard border color */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #17a2b8;
+    /* Teal border on focus */
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+    /* Teal focus shadow */
+    background-color: #e9ecef;
+    /* Light background on focus */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    transform: translateY(-2px);
+    /* Lift effect */
+}
+
+.FormAuthentication {
+    font-size: 0.875rem;
+    color: #dc3545;
+    /* Bootstrap danger color */
+    margin-top: 0.25rem;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    /* Increased height for better visibility */
+    transition: transform 0.3s;
+}
+
+textarea.form-control:focus {
+    transform: scale(1.02);
+    /* Slight scaling on focus */
+}
+
+input[type="file"] {
+    padding: 0.375rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="file"]:focus {
+    border-color: #17a2b8;
+    /* Teal border on focus */
+    box-shadow: 0 0 5px rgba(23, 162, 184, 0.5);
+    /* Focus shadow */
+}
+
+
+@media (max-width: 768px) {
+    .recentCustomers {
+        padding: 2rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .cardHeader h2 {
+        font-size: 2rem;
+        /* Smaller title on mobile */
+    }
+}
+
